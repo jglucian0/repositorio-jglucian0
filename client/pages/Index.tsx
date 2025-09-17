@@ -105,7 +105,7 @@ export default function Index() {
             </div>
             <h2 className="text-5xl font-black text-white mb-[53px]">Washington Henrique Fernandes de Sousa</h2>
             <div className="text-2xl text-[rgba(255,255,255,0.50)] leading-[34px] max-w-[1640px] mx-auto">
-              <p>�� Me chamo Washington Henrique Fernandes de Sousa, mas pode me chamar apenas de Henrique. Prazer!</p>
+              <p>👋 Me chamo Washington Henrique Fernandes de Sousa, mas pode me chamar apenas de Henrique. Prazer!</p>
               <br /><br />
               <p>👨‍💻 Há mais de 2 anos desenvolvendo e programando interfaces com JavaScript, React JS e Typescript.</p>
               <br />
@@ -244,7 +244,7 @@ export default function Index() {
                   </p>
                   <div className="flex justify-between items-center">
                     <span className="text-lg font-bold text-[#417F6F]">1 ano e 7 meses</span>
-                    <span className="text-lg text-[#417F6F]">Abril/2021 · Atualmente</span>
+                    <span className="text-lg text-[#417F6F]">Abril/2021 �� Atualmente</span>
                   </div>
                 </div>
 
@@ -261,7 +261,102 @@ export default function Index() {
                 </div>
               </div>
 
-              {/* Continue with more timeline entries... */}
+              {/* Row 2 */}
+              <div className="flex gap-[85px]">
+                {/* Professional */}
+                <div className="w-[580px] h-[220px] rounded-2xl border border-[rgba(65,127,111,0.50)] p-8">
+                  <h4 className="text-xl font-bold text-white mb-4">Designer na Viralizzi</h4>
+                  <p className="text-base text-[rgba(255,255,255,0.50)] mb-8">
+                    Disponibilizando serviços para mídias digitais na Viralizzi como Designer.
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-lg font-bold text-[#417F6F]">3 meses</span>
+                    <span className="text-lg text-[#417F6F]">Janeiro/2021 · Abril/2021</span>
+                  </div>
+                </div>
+
+                {/* Academic */}
+                <div className="w-[580px] h-[220px] rounded-2xl border border-[rgba(65,127,111,0.50)] p-8">
+                  <h4 className="text-xl font-bold text-white mb-4">Técnico, Redes de Computadores</h4>
+                  <p className="text-base text-[rgba(255,255,255,0.50)] mb-8">
+                    Desenvolvimento de features na aplicação principal e site. com React Js e Typescript, além do auxíllio de outras tecnologias como Next, Styled Components e padrões de arquitetura.
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-lg font-bold text-[#417F6F]">1 ano e 6 meses</span>
+                    <span className="text-lg text-[#417F6F]">Fevereio/2018 · Junho/2019</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Row 3 */}
+              <div className="flex gap-[85px]">
+                {/* Professional */}
+                <div className="w-[580px] h-[220px] rounded-2xl border border-[rgba(65,127,111,0.50)] p-8">
+                  <h4 className="text-xl font-bold text-white mb-4">Instrutor de programação na SuperGeeks</h4>
+                  <p className="text-base text-[rgba(255,255,255,0.50)] mb-8">
+                    Como instrutor de programação, cieência da computação e desenvolvimento de jogos com crianças e adolescentes. Além de suporte para criação de conteúdos e mídias digitais.
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-lg font-bold text-[#417F6F]">1 ano e 11 meses</span>
+                    <span className="text-lg text-[#417F6F]">Fevereiro/2019 · Janeiro/2021</span>
+                  </div>
+                </div>
+
+                {/* Academic */}
+                <div className="w-[580px] h-[220px] rounded-2xl border border-[rgba(65,127,111,0.50)] p-8">
+                  <h4 className="text-xl font-bold text-white mb-4">Inglês · Conversação avançada</h4>
+                  <p className="text-base text-[rgba(255,255,255,0.50)] mb-8">
+                    No segundo semestre de 2018 pude aprimorar meu nível de inglês (Hoje: Avançado) com 6 meses de conversação avançada pelo Instituto Federal de Jacareí (IFSP)
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-lg font-bold text-[#417F6F]">6 meses</span>
+                    <span className="text-lg text-[#417F6F]">Julho/2018 · Dezembro/2018</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Row 4 */}
+              <div className="flex gap-[85px]">
+                {/* Professional */}
+                <div className="w-[580px] h-[220px] rounded-2xl border border-[rgba(65,127,111,0.50)] p-8">
+                  <h4 className="text-xl font-bold text-white mb-4">Designer, editor e suporte em hardwares na Alorean</h4>
+                  <p className="text-base text-[rgba(255,255,255,0.50)] mb-8">
+                    Serviços freelancers de design, manutenção de hardwares, edições de mídias digitais e gráficas para empresas e pessoas da região de São José dos Campos e Jacareí pela marca própria "Alorean".
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-lg font-bold text-[#417F6F]">1 ano</span>
+                    <span className="text-lg text-[#417F6F]">Janeiro/2020 · Janeiro/2021</span>
+                  </div>
+                </div>
+
+                {/* Academic */}
+                <div className="w-[580px] h-[220px] rounded-2xl border border-[rgba(65,127,111,0.50)] p-8">
+                  <h4 className="text-xl font-bold text-white mb-4">Ensinio médio completo</h4>
+                  <p className="text-base text-[rgba(255,255,255,0.50)] mb-8">
+                    Ao final de 2017 me formei no ensino médio na escola Amância Dias Sampaio em Jacareí.
+                  </p>
+                  <div className="flex justify-end items-center">
+                    <span className="text-lg text-[#417F6F]">Dezembro/2017</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Row 5 */}
+              <div className="flex gap-[85px]">
+                {/* Professional */}
+                <div className="w-[580px] h-[220px] rounded-2xl border border-[rgba(65,127,111,0.50)] p-8">
+                  <h4 className="text-xl font-bold text-white mb-4">Jovem aprendiz</h4>
+                  <p className="text-base text-[rgba(255,255,255,0.50)] mb-8">
+                    No fim de 2016 iniciei em fase de experiência, no inicio de 2017 já como Aprendiz atuando no setor de criação, desenvolvimento e design. Suporte ao marketing digital da empresa e TI.
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-lg font-bold text-[#417F6F]">1 ano e 3 meses</span>
+                    <span className="text-lg text-[#417F6F]">Outubro/2016 · Dezembro/2017</span>
+                  </div>
+                </div>
+                {/* Empty space for alignment */}
+                <div className="w-[580px]"></div>
+              </div>
             </div>
           </div>
         </section>
