@@ -1,4 +1,20 @@
+import React, { useEffect, useRef, useState } from "react";
+
 export default function Index() {
+  const headerRef = useRef<HTMLElement | null>(null);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const el = headerRef.current;
+    if (!el) return;
+    const offsetTop = el.getBoundingClientRect().top + window.scrollY;
+    const onScroll = () => {
+      setIsSticky(window.scrollY > offsetTop + 20);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <div className="min-h-screen bg-[#090e16] text-white font-raleway">
       {/* Topbar */}
