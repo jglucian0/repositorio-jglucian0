@@ -18,22 +18,48 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-[#090e16] text-white font-raleway">
       {/* Topbar */}
-      <header className="w-full max-w-[1640px] mx-auto px-[140px] pt-[38px]">
-        <div className="w-full h-16 rounded-2xl bg-[rgba(65,127,111,0.05)] relative flex items-center justify-between px-6">
-          <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/1bec16ded1d87067830c6cb62c78f6f5db8f836b?width=73" 
-            alt="Logo" 
-            className="w-9 h-10"
-          />
-          <nav className="flex items-center gap-[17px]">
-            <a href="#" className="text-[rgba(65,127,111,0.50)] font-bold text-lg hover:text-[#417F6F] transition-colors">Home</a>
-            <a href="#about" className="text-white font-normal text-lg hover:text-[#417F6F] transition-colors">Sobre mim</a>
-            <a href="#portfolio" className="text-white font-normal text-lg hover:text-[#417F6F] transition-colors">Portfólio</a>
-            <a href="#skills" className="text-white font-normal text-lg hover:text-[#417F6F] transition-colors">Skills</a>
-            <a href="#career" className="text-white font-normal text-lg hover:text-[#417F6F] transition-colors">Carreira</a>
-            <a href="#recommendations" className="text-white font-normal text-lg hover:text-[#417F6F] transition-colors">Recomendações</a>
-            <a href="#contact" className="text-white font-normal text-lg hover:text-[#417F6F] transition-colors">Contato</a>
-          </nav>
+      <header ref={headerRef} className="w-full">
+        {/* Fixed bar when scrolled beyond header */}
+        {isSticky && (
+          <div className="fixed top-0 left-0 right-0 z-50 bg-[rgba(9,14,22,0.92)] backdrop-blur-sm">
+            <div className="max-w-[1640px] mx-auto px-[140px] py-3">
+              <div className="w-full h-12 rounded-2xl bg-[rgba(65,127,111,0.03)] flex items-center justify-between px-4">
+                <div className="flex items-center gap-4">
+                  <img src="https://api.builder.io/api/v1/image/assets/TEMP/1bec16ded1d87067830c6cb62c78f6f5db8f836b?width=73" alt="Logo" className="w-8 h-9" />
+                  <span className="text-white font-semibold">João Gabriel Luciano</span>
+                </div>
+                <nav className="flex items-center gap-[14px]">
+                  <a href="#about" className="text-[rgba(255,255,255,0.75)] text-sm hover:text-[#417F6F]">Sobre mim</a>
+                  <a href="#portfolio" className="text-[rgba(255,255,255,0.75)] text-sm hover:text-[#417F6F]">Portfólio</a>
+                  <a href="#contact" className="text-[rgba(255,255,255,0.75)] text-sm hover:text-[#417F6F]">Contato</a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Original header area (keeps layout before sticky triggers) */}
+        <div className="w-full max-w-[1640px] mx-auto px-[140px] pt-[38px]">
+          <div className="w-full h-16 rounded-2xl bg-[rgba(65,127,111,0.05)] relative flex items-center justify-between px-6">
+            <div className="flex items-center gap-4">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/1bec16ded1d87067830c6cb62c78f6f5db8f836b?width=73"
+                alt="Logo"
+                className="w-9 h-10"
+              />
+              <span className="hidden md:inline text-white font-semibold">João Gabriel Luciano</span>
+            </div>
+
+            <nav className="flex items-center gap-[17px]">
+              <a href="#" className="text-[rgba(65,127,111,0.50)] font-bold text-lg hover:text-[#417F6F] transition-colors">Home</a>
+              <a href="#about" className="text-white font-normal text-lg hover:text-[#417F6F] transition-colors">Sobre mim</a>
+              <a href="#portfolio" className="text-white font-normal text-lg hover:text-[#417F6F] transition-colors">Portfólio</a>
+              <a href="#skills" className="text-white font-normal text-lg hover:text-[#417F6F] transition-colors">Skills</a>
+              <a href="#career" className="text-white font-normal text-lg hover:text-[#417F6F] transition-colors">Carreira</a>
+              <a href="#recommendations" className="text-white font-normal text-lg hover:text-[#417F6F] transition-colors">Recomendações</a>
+              <a href="#contact" className="text-white font-normal text-lg hover:text-[#417F6F] transition-colors">Contato</a>
+            </nav>
+          </div>
         </div>
       </header>
 
