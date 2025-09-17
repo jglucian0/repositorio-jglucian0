@@ -72,3 +72,23 @@
     font-family: 'Raleway', sans-serif;
   }
 }
+
+@layer components {
+  /* Scroll reveal animations */
+  [data-animate] {
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 700ms cubic-bezier(.2,.9,.2,1) var(--delay, 0s), transform 700ms cubic-bezier(.2,.9,.2,1) var(--delay, 0s);
+    will-change: opacity, transform;
+  }
+
+  [data-animate].visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* small utility for stagger via inline style or data-delay attribute */
+  [data-animate][data-delay] {
+    --delay: attr(data-delay seconds);
+  }
+}
