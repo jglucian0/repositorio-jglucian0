@@ -13,8 +13,8 @@ export default {
       },
     },
     fontFamily: {
-      'raleway': ['Raleway', 'sans-serif'],
-      'sans': ['Raleway', 'sans-serif'],
+      raleway: ["Raleway", "sans-serif"],
+      sans: ["Raleway", "sans-serif"],
     },
     extend: {
       colors: {
