@@ -99,16 +99,16 @@ export default function Index() {
           </div>
 
           {/* Hero Image and Action Buttons */}
-          <div className="absolute right-[374px] top-[115px]">
-            <img 
-              src="https://api.builder.io/api/v1/image/assets/TEMP/b4205266a249c62f23ce261bb094114df636097f?width=1112" 
-              alt="Profile Avatar" 
-              className="w-[556px] h-[517px]"
+          <div className="absolute left-1/2 transform -translate-x-1/2 top-[115px]">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/b4205266a249c62f23ce261bb094114df636097f?width=1112"
+              alt="Profile Avatar"
+              className="w-[556px] h-[517px] rounded-full object-cover"
             />
           </div>
 
           {/* Action Buttons */}
-          <div className="absolute left-[140px] top-[615px] flex flex-col gap-4">
+          <div className="absolute right-[140px] top-[260px] flex flex-col gap-4 items-end">
             {/* Download CV Button */}
             <div className="flex items-center gap-4">
               <svg width="253" height="25" viewBox="0 0 253 25">
