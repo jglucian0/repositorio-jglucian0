@@ -282,7 +282,6 @@ export default function Index() {
                 </div>
               </div>
 
-              {/* Additional rows already present with data-animate set earlier */}
             </div>
           </div>
         </section>
