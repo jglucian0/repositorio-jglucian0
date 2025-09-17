@@ -9,11 +9,20 @@ export default {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        "2xl": "1640px",
       },
+    },
+    fontFamily: {
+      'raleway': ['Raleway', 'sans-serif'],
+      'sans': ['Raleway', 'sans-serif'],
     },
     extend: {
       colors: {
+        teal: {
+          main: "#417F6F",
+          light: "rgba(65, 127, 111, 0.1)",
+          medium: "rgba(65, 127, 111, 0.5)",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
