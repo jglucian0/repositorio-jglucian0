@@ -559,7 +559,7 @@ export default function Index() {
 
         {/* Skills Section */}
         {/* ALTERAÇÃO: px e pt para mobile */}
-        <section id="skills" className="px-6 md:px-[140px] pt-20 md:pt-[120px] mb-[145px]" data-animate>
+        <section id="skills" className="px-6 md:px-[140px] pt-5 mb-5 md:pt-[120px] md:mb-[145px]" data-animate>
           <div className="max-w-[1640px] mx-auto text-center">
             <div className="w-[283px] h-[45px] rounded-2xl bg-[rgba(65,127,111,0.10)] flex items-center justify-center mx-auto mb-6">
               <span className="text-[#417F6F] font-bold text-xl">💻 Hard skills</span>
@@ -886,16 +886,10 @@ export default function Index() {
               <h2 className="text-3xl md:text-5xl font-black text-white">Trajetória até aqui</h2>
             </div>
 
-            {/* Career Timeline Headers */}
-            {/* CORREÇÃO APLICADA: Mantido o text-center para centralizar o texto em ambas as colunas (mobile e desktop). */}
-            <div className="flex flex-col md:flex-row mb-10 md:mb-[64px] items-center text-center">
-              <div className="w-full ml-20">
+            <div className="flex mb-10 md:mb-[64px] items-center text-center">
+              <div className="w-full">
                 <h3 className="text-xl md:text-[32px] font-black text-white mb-2">Área profissional</h3>
                 <p className="text-lg md:text-2xl text-[rgba(255,255,255,0.50)]">2022 · Atualmente</p>
-              </div>
-              <div className="w-full mr-20">
-                <h3 className="text-xl md:text-[32px] font-black text-white mb-2">Acadêmica</h3>
-                <p className="text-lg md:text-2xl text-[rgba(255,255,255,0.50)]">2021 · Atualmente</p>
               </div>
             </div>
 
@@ -907,10 +901,9 @@ export default function Index() {
               slidesToScroll={1}
               adaptiveHeight={true}
               arrows={false}
-            // Ajuste essas opções conforme necessário
             >
               <ProfessionalCard
-              
+
                 title="Desenvolvedor Backend - Freelancer"
                 description={[
                   "Desenvolvimento de APIs RESTful utilizando Django e Flask (Python), focadas na aplicação de regras de negócio.",
@@ -933,132 +926,72 @@ export default function Index() {
 
             </Slider>
 
-
-            {/* Career Timeline */}
-            <div className="space-y-8 md:space-y-[64px] items-center flex flex-col">
-              <div className="flex flex-col md:flex-row gap-6 md:gap-[50px] items-start">
-
-                {/* Coluna 1: Área Profissional */}
-                <div className="w-full md:w-1/2 flex flex-col space-y-8 md:space-y-[64px]">
-
-                  {/* Card 1 Profissional: Desenvolvedor Backend */}
-                  <div className="w-full md:w-[600px] h-auto rounded-2xl border border-[rgba(65,127,111,0.50)] bg-[rgba(65,127,111,0.10)] p-8">
-                    <h4 className="text-lg sm:text-xl font-bold text-white mb-4">Desenvolvedor Backend - Freelancer</h4>
-                    {/* ... (Conteúdo do Backend) ... */}
-                    <p className="text-sm sm:text-base text-[rgba(255,255,255,0.50)] mb-4">
-                      Desenvolvimento de APIs RESTful utilizando Django e Flask (Python), focadas na aplicação de regras de negócio.
-                    </p>
-                    <p className="text-sm sm:text-base text-[rgba(255,255,255,0.50)] mb-4">
-                      Integração com bancos de dados PostgreSQL e arquitetura assíncrona com Redis e RabbitMQ (mensageria).
-                    </p>
-                    <p className="text-sm sm:text-base text-[rgba(255,255,255,0.50)] mb-4">
-                      Implantação de aplicações em ambiente Linux, aplicando práticas de CI/CD e utilizando Docker para conteinerização e Git para versionamento contínuo.
-                    </p>
-                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center">
-                      <span className="text-base sm:text-lg font-bold text-[#417F6F]">1 ano e 11 meses</span>
-                      <span className="text-base sm:text-lg text-[#417F6F]">Novembro/2023 · Atualmente</span>
-                    </div>
-                  </div>
-
-                  {/* Card 2 Profissional: Exército Brasileiro */}
-                  <div className="w-full md:w-[600px] h-auto rounded-2xl border border-[rgba(65,127,111,0.50)] p-8">
-                    <h4 className="text-lg sm:text-xl font-bold text-white mb-4">Exército Brasileiro - 26º Grupo de Artilharia de Campanha</h4>
-                    {/* ... (Conteúdo do Exército) ... */}
-                    <p className="text-sm sm:text-base text-[rgba(255,255,255,0.50)] mb-4">
-                      Integrei a equipe responsável pela Comunicação Social e Tecnologia da Informação do Batalhão, gerenciando a transparência institucional e a produção de conteúdo.
-                    </p>
-                    <p className="text-sm sm:text-base text-[rgba(255,255,255,0.50)] mb-4">
-                      Atuação em TI focada na estilização e manutenção do front-end de páginas web internas (sistemas de gestão interna), otimizando a organização e acessibilidade da informação.
-                    </p>
-                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center">
-                      <span className="text-base sm:text-lg font-bold text-[#417F6F]">1 ano e 11 meses</span>
-                      <span className="text-base sm:text-lg text-[#417F6F]">Março/2022 · Março/2023</span>
-                    </div>
-                  </div>
-
-                </div>
-
-                {/* Coluna 2: Área Acadêmica */}
-                <div className="w-full md:w-1/2 flex flex-col space-y-8 md:space-y-[64px]">
-
-                  {/* Card 1 Acadêmico: Graduação ADS */}
-                  <div className="w-full md:w-[600px] h-auto rounded-2xl border border-[rgba(65,127,111,0.50)] bg-[#417f6f19] p-8">
-                    <h4 className="text-lg sm:text-xl font-bold text-white mb-4">Graduação em Tecnologia em Análise e Desenvolvimento de Sistemas - Uninter</h4>
-                    {/* ... (Conteúdo da Graduação) ... */}
-                    <p className="text-sm sm:text-base text-[rgba(255,255,255,0.50)] mb-7">
-                      Cursando formação superior orientada à análise de requisitos e modelagem de soluções de software de ponta a ponta.
-                    </p>
-                    <p className="text-sm sm:text-base text-[rgba(255,255,255,0.50)] mb-4">
-                      Desenvolvimento de competências em gestão de projetos e na concepção de sistemas com foco em escalabilidade e padrões de mercado. Foco na aplicação de métodos para traduzir problemas de negócio em especificações técnicas, visando a alta performance.
-                    </p>
-                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center">
-                      <span className="text-base sm:text-lg font-bold text-[#417F6F]">9 meses</span>
-                      <span className="text-base sm:text-lg text-[#417F6F]">Janeiro/2024 · Atualmente</span>
-                    </div>
-                  </div>
-
-                  {/* Card 2 Acadêmico: EBAC */}
-                  <div className="w-full md:w-[600px] h-auto rounded-2xl border border-[rgba(65,127,111,0.50)] p-8">
-                    <h4 className="text-lg sm:text-xl font-bold text-white mb-4">Formação Desenvolvedor Full Stack Python - EBAC</h4>
-                    {/* ... (Conteúdo da EBAC) ... */}
-                    <p className="text-sm sm:text-base text-[rgba(255,255,255,0.50)] mb-5">
-                      Formação intensiva Full Stack, com foco na arquitetura Backend em Python (Django) e no desenvolvimento Frontend.
-                    </p>
-                    <p className="text-sm sm:text-base text-[rgba(255,255,255,0.50)] mb-6">
-                      Aprendizado prático de bancos de dados (PostgreSQL), ambiente Linux, utilização de Git, metodologias para boas práticas e padrões de projeto.
-                    </p>
-                    <p className="text-sm sm:text-base text-[rgba(255,255,255,0.50)] mb-4">
-                      Capacitação para desenvolver aplicações do zero, desde a interface do usuário até a estrutura interna e bancos de dados.
-                    </p>
-                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center">
-                      <span className="text-base sm:text-lg font-bold text-[#417F6F]">3 anos</span>
-                      <span className="text-base sm:text-lg text-[#417F6F]">Maio/2023 · Maio/2025</span>
-                    </div>
-                  </div>
-
-                  {/* Card 3 Acadêmico: Inglês */}
-                  <div className="w-full md:w-[600px] h-auto rounded-2xl border border-[rgba(65,127,111,0.50)] p-8">
-                    <h4 className="text-lg sm:text-xl font-bold text-white mb-4">Inglês: Certificação EF SET (B1 Intermediário)</h4>
-                    {/* ... (Conteúdo do Inglês) ... */}
-                    <p className="text-sm sm:text-base text-[rgba(255,255,255,0.50)] mb-4">
-                      B1 Intermediário (41/100) obtido no teste de proficiência internacional EF SET, alinhado ao QECR.
-                    </p>
-                    <p className="text-sm sm:text-base text-[rgba(255,255,255,0.50)] mb-4">
-                      Escrita no Nível B2 (Independente), ideal para comunicação técnica e documentação de projetos.
-                    </p>
-                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center">
-                      <span className="text-base sm:text-lg font-bold text-[#417F6F]">Certificado EF SET</span>
-                      <span className="text-base sm:text-lg text-[#417F6F]">Julho/2025</span>
-                    </div>
-                  </div>
-
-                  {/* Card 4 Acadêmico: Ensino Médio Técnico IFPR */}
-                  <div className="w-full md:w-[600px] h-auto rounded-2xl border border-[rgba(65,127,111,0.50)] p-8">
-                    <h4 className="text-lg sm:text-xl font-bold text-white mb-4">Ensino Médio Técnico em Eletrotécnica - IFPR</h4>
-                    {/* ... (Conteúdo do IFPR) ... */}
-                    <p className="text-sm sm:text-base text-[rgba(255,255,255,0.50)] mb-4">
-                      Conclusão do Ensino Médio Técnico Integrado pelo Instituto Federal do Paraná (IFPR), em Ivaiporã, com foco em eletrônica e sistemas.
-                    </p>
-                    <p className="text-sm sm:text-base text-[rgba(255,255,255,0.50)] mb-4">
-                      Formação sólida que inclui a análise de circuitos elétricos, sistemas de controle, e uso prático de ferramentas de automação e medição.
-                    </p>
-                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center">
-                      <span className="text-base sm:text-lg font-bold text-[#417F6F]">5 anos</span>
-                      <span className="text-base sm:text-lg text-[#417F6F]">Janeiro/2017 · Dezembro/2021</span>
-                    </div>
-                  </div>
-
-
-
-                </div>
+            <div className="flex mt-20 md:flex-row mb-10 md:mb-[64px] items-center text-center">
+              <div className="w-full">
+                <h3 className="text-xl md:text-[32px] font-black text-white mb-2">Acadêmica</h3>
+                <p className="text-lg md:text-2xl text-[rgba(255,255,255,0.50)]">2021 · Atualmente</p>
               </div>
             </div>
+
+            <Slider
+              dots={true}
+              infinite={true}
+              speed={500}
+              slidesToShow={1}
+              slidesToScroll={1}
+              adaptiveHeight={true}
+              arrows={false}
+            >
+              <ProfessionalCard
+
+                title="Graduação em Tecnologia em ADS - Uninter"
+                description={[
+                  "Cursando formação superior em Tec. em Análise e Desenvolvimento de Sistemas orientada à análise de requisitos e modelagem de soluções de software de ponta a ponta.",
+                  "Desenvolvimento de competências em gestão de projetos e na concepção de sistemas com foco em escalabilidade e padrões de mercado. Foco na aplicação de métodos para traduzir problemas de negócio em especificações técnicas, visando a alta performance.",
+                ]}
+                duration="1 ano e 11 meses"
+                period="Novembro/2023 · Atualmente"
+              />
+
+              <ProfessionalCard
+                title="Formação Desenvolvedor Full Stack Python - EBAC"
+                description={[
+                  "Formação intensiva Full Stack, com foco na arquitetura Backend em Python (Django) e no desenvolvimento Frontend.",
+                  "Aprendizado prático de bancos de dados (PostgreSQL), ambiente Linux, utilização de Git, metodologias para boas práticas e padrões de projeto.",
+                  "Capacitação para desenvolver aplicações do zero, desde a interface do usuário até a estrutura interna e bancos de dados."
+                ]}
+                duration="3 anos"
+                period="Maio/2023 · Maio/2025"
+              />
+
+              <ProfessionalCard
+                title="Inglês: Certificação EF SET (B1 Intermediário)"
+                description={[
+                  "B1 Intermediário (41/100) obtido no teste de proficiência internacional EF SET, alinhado ao QECR.",
+                  "Escrita no Nível B2 (Independente), ideal para comunicação técnica e documentação de projetos."
+                ]}
+                duration="Certificado EF SET"
+                period="Julho/2025"
+              />
+
+              <ProfessionalCard
+                title="Ensino Médio Técnico em Eletrotécnica - IFPR"
+                description={[
+                  "Conclusão do Ensino Médio Técnico Integrado pelo Instituto Federal do Paraná (IFPR), em Ivaiporã, com foco em eletrônica e sistemas.",
+                  "Formação sólida que inclui a análise de circuitos elétricos, sistemas de controle, e uso prático de ferramentas de automação e medição."
+                ]}
+                duration="5 anos"
+                period="Janeiro/2017 · Dezembro/2021"
+              />
+
+            </Slider>
+
           </div>
         </section>
 
         {/* Contact Section */}
         {/* ALTERAÇÃO: px e pt para mobile */}
-        <section id="contact" className="px-6 md:px-[140px] md:pt-[150px] mb-[150px]">
+        <section id="contact" className="px-6 md:px-[140px] mt-20 md:pt-[150px] mb-[150px]">
           <div className="max-w-[663px] mx-auto text-center">
             <div className="w-[138px] h-[45px] rounded-2xl bg-[rgba(65,127,111,0.10)] flex items-center justify-center mx-auto mb-6">
               <span className="text-[#417F6F] font-bold text-xl">📞 Contato</span>
