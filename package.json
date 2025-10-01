@@ -23,6 +23,9 @@
   "dependencies": {
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
+    "react-icons": "^5.5.0",
+    "react-slick": "^0.31.0",
+    "slick-carousel": "^1.8.1",
     "zod": "^3.25.76"
   },
   "devDependencies": {

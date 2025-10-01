@@ -1,0 +1,16 @@
+/* Cor dos pontos (dots) */
+.slick-dots li button:before {
+  color: #fff; /* Cor do dot quando não está ativo */
+  margin-top: 5px;
+  font-size: 10px; /* Tamanho do dot, opcional */
+}
+
+.slick-slide {
+  padding: 0 12px; /* Adiciona 10px de padding à esquerda e à direita de CADA slide */
+  box-sizing: border-box; /* Garante que o padding seja incluído na largura */
+}
+
+/* Cor do dot ativo */
+.slick-dots li.slick-active button:before {
+  color: #ffffff; /* Cor do dot quando está ativo */
+}
